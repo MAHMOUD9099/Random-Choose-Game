@@ -40,10 +40,16 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: clamp(20px, 2rem, 40px);
+    font-size: clamp(15px, 2.5rem, 40px);
     font-weight: bold;
     align-self: center;
     margin-bottom: 10px;
+}
+
+@media (max-width: 512px) {
+    .card h2 {
+        font-size: 23px;
+    }
 }
 
 .card .input-container {
