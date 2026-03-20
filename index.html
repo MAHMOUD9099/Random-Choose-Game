@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Random Choose Game | M-Prog</title>
+    </head>
+    <body>
+        <main>
+            <div class="card">
+                <h2>Enter The Names Here</h2>
+                <div class="input-container">
+                    <input type="text" id="inp" required autocomplete="off" />
+                    <label for="inp">The Name</label>
+                    <button onclick="addName()">Add The Name</button>
+                </div>
+
+                <div id="namesList" class="names-display"></div>
+
+                <button onclick="drawWinner()">
+                    Start Choosing The Winner
+                </button>
+
+                <div id="winnerResult"></div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
